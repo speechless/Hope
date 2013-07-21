@@ -1,4 +1,6 @@
 #pragma once
+#include "OnScreen.h"
+
 class Instrument
 {
 public:
@@ -7,10 +9,14 @@ public:
 
 public:
 	virtual int init() = 0;
+	int loadOnScreen();
+
+public:
 	virtual int playNote(int note) = 0;
 	virtual int switchOctave(int octave) = 0;
 
 private:
 	int octave, breaker;
+	Controller *controller;
 };
 

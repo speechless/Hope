@@ -120,8 +120,8 @@ int loadSong(std::string path, MusicPlayer *object)
 		object->loadBell();
 	else if (instrument == "flute")
 		object->loadFlute();
-	else if (instrument == "trumpet")
-		object->loadTrumpet();
+	else if (instrument == "Horn")
+		object->loadHorn();
 	else return 4;
 
 	object->setTempo(tempo);

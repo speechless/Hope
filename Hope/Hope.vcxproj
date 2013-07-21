@@ -76,24 +76,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bell.cpp" />
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Flute.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MusicPlayer.cpp" />
+    <ClCompile Include="OnScreen.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Trumpet.cpp" />
+    <ClCompile Include="Horn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell.h" />
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Flute.h" />
     <ClInclude Include="Instrument.h" />
     <ClInclude Include="MusicPlayer.h" />
+    <ClInclude Include="OnScreen.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Trumpet.h" />
+    <ClInclude Include="Horn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IncludeFileDependencies1.dgml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

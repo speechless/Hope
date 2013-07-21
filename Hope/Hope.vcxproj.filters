@@ -16,9 +16,6 @@
     <Filter Include="Source Files\Instrument">
       <UniqueIdentifier>{783892e2-0c39-4f98-b48f-df1bfc78d57c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Instrument\Trumpet">
-      <UniqueIdentifier>{1012d3fe-ec48-46d7-a2e7-394d0a7b9946}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Instrument\Bell">
       <UniqueIdentifier>{64594b87-b5ed-43c8-91f0-152979905f0c}</UniqueIdentifier>
     </Filter>
@@ -31,6 +28,15 @@
     <Filter Include="Source Files\Utility">
       <UniqueIdentifier>{b0470f5e-40f6-409d-ba52-f27aa77e0068}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{2420b518-f8aa-47d0-96a7-4489f3c4550a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Instrument\Horn">
+      <UniqueIdentifier>{1012d3fe-ec48-46d7-a2e7-394d0a7b9946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller\OnScreen">
+      <UniqueIdentifier>{2d830dcd-fb81-4fd8-9433-e878e31f6377}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,9 +47,6 @@
     </ClCompile>
     <ClCompile Include="Instrument.cpp">
       <Filter>Source Files\Instrument</Filter>
-    </ClCompile>
-    <ClCompile Include="Trumpet.cpp">
-      <Filter>Source Files\Instrument\Trumpet</Filter>
     </ClCompile>
     <ClCompile Include="Bell.cpp">
       <Filter>Source Files\Instrument\Bell</Filter>
@@ -57,6 +60,15 @@
     <ClCompile Include="FileManager.cpp">
       <Filter>Source Files\Utility</Filter>
     </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Horn.cpp">
+      <Filter>Source Files\Instrument\Horn</Filter>
+    </ClCompile>
+    <ClCompile Include="OnScreen.cpp">
+      <Filter>Source Files\Controller\OnScreen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -64,9 +76,6 @@
     </ClInclude>
     <ClInclude Include="Instrument.h">
       <Filter>Source Files\Instrument</Filter>
-    </ClInclude>
-    <ClInclude Include="Trumpet.h">
-      <Filter>Source Files\Instrument\Trumpet</Filter>
     </ClInclude>
     <ClInclude Include="Bell.h">
       <Filter>Source Files\Instrument\Bell</Filter>
@@ -80,5 +89,17 @@
     <ClInclude Include="FileManager.h">
       <Filter>Source Files\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Source Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Horn.h">
+      <Filter>Source Files\Instrument\Horn</Filter>
+    </ClInclude>
+    <ClInclude Include="OnScreen.h">
+      <Filter>Source Files\Controller\OnScreen</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IncludeFileDependencies1.dgml" />
   </ItemGroup>
 </Project>

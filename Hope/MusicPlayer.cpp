@@ -25,9 +25,9 @@ int MusicPlayer::loadFlute()
 	return 0;
 }
 
-int MusicPlayer::loadTrumpet()
+int MusicPlayer::loadHorn()
 {
-	instrument = new Trumpet;
+	instrument = new Horn;
 	return 0;
 }
 

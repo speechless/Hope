@@ -1,7 +1,7 @@
 #pragma once
 #include "Bell.h"
 #include "Flute.h"
-#include "Trumpet.h"
+#include "Horn.h"
 
 class MusicPlayer
 {
@@ -12,7 +12,7 @@ public:
 public: // Instrument Config
 	int loadBell();
 	int loadFlute();
-	int loadTrumpet();
+	int loadHorn();
 
 	int loadMusicSheet(std::vector <char> object);
 	int setTempo(int value);
