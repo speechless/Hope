@@ -76,6 +76,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bell.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Flute.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="main.cpp" />
@@ -87,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="Flute.h" />
     <ClInclude Include="Instrument.h" />
     <ClInclude Include="MusicPlayer.h" />

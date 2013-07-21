@@ -28,6 +28,9 @@
     <Filter Include="Source Files\MusicPlayer">
       <UniqueIdentifier>{57622674-2f00-4fe6-ae6c-3bc4c726b192}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{b0470f5e-40f6-409d-ba52-f27aa77e0068}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +54,9 @@
     <ClCompile Include="MusicPlayer.cpp">
       <Filter>Source Files\MusicPlayer</Filter>
     </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -70,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="MusicPlayer.h">
       <Filter>Source Files\MusicPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Source Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
