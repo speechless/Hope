@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Instrument">
+      <UniqueIdentifier>{783892e2-0c39-4f98-b48f-df1bfc78d57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Instrument\Trumpet">
+      <UniqueIdentifier>{1012d3fe-ec48-46d7-a2e7-394d0a7b9946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Instrument\Bell">
+      <UniqueIdentifier>{64594b87-b5ed-43c8-91f0-152979905f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Instrument\Flute">
+      <UniqueIdentifier>{39f749e0-ec37-4dd9-b455-7b245a152847}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,10 +33,34 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Instrument.cpp">
+      <Filter>Source Files\Instrument</Filter>
+    </ClCompile>
+    <ClCompile Include="Trumpet.cpp">
+      <Filter>Source Files\Instrument\Trumpet</Filter>
+    </ClCompile>
+    <ClCompile Include="Bell.cpp">
+      <Filter>Source Files\Instrument\Bell</Filter>
+    </ClCompile>
+    <ClCompile Include="Flute.cpp">
+      <Filter>Source Files\Instrument\Flute</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Instrument.h">
+      <Filter>Source Files\Instrument</Filter>
+    </ClInclude>
+    <ClInclude Include="Trumpet.h">
+      <Filter>Source Files\Instrument\Trumpet</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell.h">
+      <Filter>Source Files\Instrument\Bell</Filter>
+    </ClInclude>
+    <ClInclude Include="Flute.h">
+      <Filter>Source Files\Instrument\Flute</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

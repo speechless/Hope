@@ -75,13 +75,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bell.cpp" />
+    <ClCompile Include="Flute.cpp" />
+    <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Trumpet.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bell.h" />
+    <ClInclude Include="Flute.h" />
+    <ClInclude Include="Instrument.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Trumpet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
