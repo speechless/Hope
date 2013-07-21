@@ -92,8 +92,7 @@ int OnScreen::leftClick()
 int OnScreen::trainMouse()
 {
 	RECT keyboardlocation;
-	GetWindowRect(keyboard, &keyboardlocation);
-
+	
 	std::cout << "Mouse training has not been found. Beginning mouse training program.\n\n";
 	std::cout << "Instructions:\n\tWhilst this program is your ACTIVE window,\n"
 		<< "\thover your mouse over the number specified\n\tand press RETURN (do not left click)\n\n";
@@ -107,6 +106,8 @@ int OnScreen::trainMouse()
 		std::cin.clear();
 
 		GetCursorPos(&buttonMap[numkey]);
+		GetWindowRect(keyboard, &keyboardlocation);
+
 		buttonMap[numkey].x -= keyboardlocation.left;
 		buttonMap[numkey].y -= keyboardlocation.top;
 	}

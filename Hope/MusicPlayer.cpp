@@ -112,6 +112,12 @@ int MusicPlayer::playSong()
 		}
 	}
 
+	// Reset octave to low for curtosy...
+	if (octave != 1)
+	{
+		instrument->switchOctave(1);
+		octave = 1;
+	}
 
 	return 0;
 }

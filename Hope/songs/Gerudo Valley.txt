@@ -1,5 +1,8 @@
-105 1 50
+Instrument="flute"
+Tempo="105"
+Measure="1"
 
+[SHEET START]
 4w
 
 [4s 6s 7s 8es 4s 6s 7s 8qe]	[4s 6s 7s 8es 4s 6s 7s 8qe]
@@ -21,3 +24,4 @@
 [L8s 7s 8e 8q  8e 5s 6s 8s 8s 7s 6s] 	[8s 7s 6e 6hq]
 [8s 7s H2e 1q 1e L7s 8s H2s 3s 1s L7s]	[8s 7s H2e 1hq]
 [H2s 1s 2e 2q 2e L7s 8s H2s 3s 4s 5s]	[3s 2s 4e 3q]
+[SHEET END]
