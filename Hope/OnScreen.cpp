@@ -14,7 +14,9 @@ OnScreen::OnScreen(void)
 
 	if (keyboardlocation.left < 0 || keyboardlocation.top < 0)
 	{
-		std::cout << "Cannot find On-Screen Keyboard" << std::endl;
+		std::cout << "Cannot find On-Screen Keyboard\n\tPress Enter/Return key to exit." << std::endl;
+		std::cin.ignore(1000, '\n');
+		std::cin.clear();
 		exit(1);
 	}
 

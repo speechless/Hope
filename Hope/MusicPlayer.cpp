@@ -83,38 +83,33 @@ int MusicPlayer::playSong()
 			break;
 
 		case 'L':
-			std::cout << "L:" << octave << std::endl;
 			if (octave != 1)
 			{
 				instrument->switchOctave(1);
 				octave = 1;
-				std::this_thread::sleep_for(std::chrono::milliseconds(10));
+				std::this_thread::sleep_for(std::chrono::milliseconds(100));
 			}
 			break;
 		case 'M':
-			std::cout << "M:" << octave << std::endl;
 			if (octave != 2)
 			{
 				instrument->switchOctave(2);
 				octave = 2;
-				std::this_thread::sleep_for(std::chrono::milliseconds(10));
+				std::this_thread::sleep_for(std::chrono::milliseconds(20));
 			}
 			break;
 		case 'H':
-			std::cout << "H:" << octave << std::endl;
 			if (octave != 3)
 			{
 				instrument->switchOctave(3);
 				octave = 3;
-				std::this_thread::sleep_for(std::chrono::milliseconds(10));
+				std::this_thread::sleep_for(std::chrono::milliseconds(20));
 			}
 			break;
 
 		default:
 			break;
 		}
-
-
 	}
 
 
