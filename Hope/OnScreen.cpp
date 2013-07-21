@@ -40,12 +40,16 @@ int OnScreen::init()
 
 int OnScreen::pressNumber(int number)
 {
-	static HWND keyboard = FindWindowA(NULL, "On-Screen Keyboard");
+	ShowWindow(guildwars2, SW_RESTORE);
+    SetForegroundWindow(guildwars2);
+    SetFocus(guildwars2);
+
+	keyboard = FindWindowA(NULL, "On-Screen Keyboard");
 	RECT keyboardlocation;
 	GetWindowRect(keyboard, &keyboardlocation);
 
 	moveMouse(keyboardlocation.left + buttonMap[number].x, keyboardlocation.top + buttonMap[number].y);
-//	leftClick ();
+	leftClick ();
 	return 0;
 }
 

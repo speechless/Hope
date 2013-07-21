@@ -21,13 +21,19 @@ void keyMonitor ()
 
 int main (int argc, char *argv[])
 {
-/*	MusicPlayer player;
+	// Key monitor (END to end program)
+	std::thread t(keyMonitor);
+	t.detach();
+
+	// Program
+	MusicPlayer player;
 
 	if (loadSong("songs/music.txt",&player)) {
 		std::cout << "Error opening music file" << std::endl;
 	}
-*/
 
+	player.playSong();
+/*
 	OnScreen onScreen;
 
 	std::thread t(keyMonitor);
@@ -41,6 +47,6 @@ int main (int argc, char *argv[])
 			std::this_thread::sleep_for(std::chrono::milliseconds(100));
 		}
 	}
-
+*/
 	return 0;
 }

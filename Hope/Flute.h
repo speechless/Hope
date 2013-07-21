@@ -12,5 +12,10 @@ public:
 	int playNote(int note);
 	int switchOctave(int octave);
 
+private:
+	void startTimeout();
+
+private:
+	std::mutex blocker;
 };
 

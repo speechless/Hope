@@ -15,8 +15,10 @@ public:
 	virtual int playNote(int note) = 0;
 	virtual int switchOctave(int octave) = 0;
 
-private:
-	int octave, breaker;
+protected:
 	Controller *controller;
+	int octave;
+	
+	
 };
 
