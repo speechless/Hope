@@ -6,5 +6,11 @@ class Flute :
 public:
 	Flute(void);
 	~Flute(void);
+
+public:
+	int init();
+	int playNote(int note);
+	int switchOctave(int octave);
+
 };
 

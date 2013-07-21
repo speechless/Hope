@@ -6,5 +6,10 @@ class Bell :
 public:
 	Bell(void);
 	~Bell(void);
+
+public:
+	int init();
+	int playNote(int note);
+	int switchOctave(int octave);
 };
 

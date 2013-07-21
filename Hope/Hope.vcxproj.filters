@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Instrument\Flute">
       <UniqueIdentifier>{39f749e0-ec37-4dd9-b455-7b245a152847}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\MusicPlayer">
+      <UniqueIdentifier>{57622674-2f00-4fe6-ae6c-3bc4c726b192}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="Flute.cpp">
       <Filter>Source Files\Instrument\Flute</Filter>
     </ClCompile>
+    <ClCompile Include="MusicPlayer.cpp">
+      <Filter>Source Files\MusicPlayer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Flute.h">
       <Filter>Source Files\Instrument\Flute</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicPlayer.h">
+      <Filter>Source Files\MusicPlayer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

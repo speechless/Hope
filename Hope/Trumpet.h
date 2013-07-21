@@ -6,5 +6,10 @@ class Trumpet :
 public:
 	Trumpet(void);
 	~Trumpet(void);
+
+public:
+	int init();
+	int playNote(int note);
+	int switchOctave(int octave);
 };
 
