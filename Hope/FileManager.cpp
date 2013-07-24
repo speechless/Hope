@@ -67,7 +67,16 @@ int getMusicSheet (std::string &text, std::vector <char> &sheet)
 		case 'L':
 		case 'M':
 		case 'H':
+
 			sheet.push_back(text.at(index));
+			break;
+
+		case ' ':
+		case '\n':
+		case '[':
+		case ']':
+
+			sheet.push_back(0);
 			break;
 
 		default:

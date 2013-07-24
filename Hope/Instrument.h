@@ -13,12 +13,13 @@ public:
 
 public:
 	virtual int playNote(int note) = 0;
+	virtual int stopNote() = 0;
 	virtual int switchOctave(int octave) = 0;
 
 protected:
 	Controller *controller;
 	int octave;
-	
+	int note;
 	
 };
 

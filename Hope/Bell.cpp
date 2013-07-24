@@ -25,6 +25,12 @@ int Bell::playNote(int note)
 }
 
 
+int Bell::stopNote()
+{
+	return 0;
+}
+
+
 int Bell::switchOctave(int octave)
 {
 	return 0;

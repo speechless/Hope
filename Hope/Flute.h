@@ -10,6 +10,7 @@ public:
 public:
 	int init();
 	int playNote(int note);
+	int stopNote();
 	int switchOctave(int octave);
 
 private:
@@ -17,5 +18,6 @@ private:
 
 private:
 	std::mutex blocker;
+	bool notePlaying;
 };
 

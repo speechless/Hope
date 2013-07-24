@@ -4,6 +4,8 @@
 
 Flute::Flute(void)
 {
+	note = -1;
+	notePlaying = false;
 }
 
 
@@ -18,12 +20,30 @@ int Flute::init()
 }
 
 
-int Flute::playNote(int note)
+int Flute::playNote(int _note)
 {
-	controller->pressNumber(note);
+	if (note == _note)
+	{
+		stopNote();
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+	}
+
+	controller->pressNumber(_note);
+	notePlaying = true;
+
+	note = _note;
 	return 0;
 }
 
+int Flute::stopNote()
+{
+	if (notePlaying == false)
+		return 0;
+
+	controller->pressNumber(note);
+	notePlaying = false;
+	return 0;
+}
 
 int Flute::switchOctave(int _octave)
 {

@@ -45,10 +45,29 @@ int MusicPlayer::playSong()
 	int octave = 1;
 
 	for (unsigned int i = 0; i < musicSheet.size(); i++)
-	{
-
+	{	
 		switch (musicSheet.at(i))
 		{
+		case 0:
+
+			for (int forward = 1; i + forward < musicSheet.size(); forward++)
+			{
+				switch (musicSheet.at(i + forward))
+				{
+				case '1': case '2': case '3': case '4': case '5':
+				case '6': case '7': case '8': case '9': case '0':
+					forward = musicSheet.size();
+					break;
+				case 'w': case 'h': case 'q': case 's': case 't': case 'S':
+					instrument->stopNote();
+					forward = musicSheet.size();
+					break;
+				default:
+					break;
+				}
+			}
+
+			break;
 		case '1': instrument->playNote(1); break;
 		case '2': instrument->playNote(2); break;
 		case '3': instrument->playNote(3); break;

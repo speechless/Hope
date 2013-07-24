@@ -25,6 +25,12 @@ int Horn::playNote(int note)
 }
 
 
+int Horn::stopNote()
+{
+	return 0;
+}
+
+
 int Horn::switchOctave(int octave)
 {
 	return 0;
